@@ -1,0 +1,149 @@
+
+/*#include<stdio.h>
+int main()
+{
+    int a=5;
+    a=6;
+    a=a+5*a;
+    printf("a=%d\n",a);
+    return 0;
+}*/
+ 
+ //5.
+ /*#include<stdio.h>
+ int main()
+ {
+     int a=5,b=5;
+     printf("%d,%d\t",++a,b--);
+     printf("%d,%d\t",a,b);
+     printf("%d,%d\t",++a,b++);
+     printf("%d,%d\n",a,b);
+     return 0;
+}
+
+
+//6.
+/*#include<stdio.h>
+int main(void)
+{
+    int x,y,z;
+    x=8++;
+    y=++x++;
+    z=(x+y)--;
+    printf("x=%d,y=%d,z=%d\n",x,y,z);
+    return 0;
+}*/
+
+//x=8
+//y=10                   ##PROBLAM##
+//z=18
+
+//7.
+/*#include<stdio.h>
+int main()
+{
+    int a=4,b=8,c=3,d=9,z;
+    z=a++ + ++b * c-- - --d;
+    printf("a=%d, b=%d, c=%d ,d=%d, z=%d\n",a,b,c,d,z);
+    return 0;
+}*/
+
+/*z= 4++ + ++8 * 3-- - --9
+z=4+9*3-8/a=5, b=9, c=2 ,d=8
+z=23*/
+
+
+//8.
+/*#include<stdio.h>
+int main()
+{
+    int a=14,b,c;
+    a=a%5;
+    b=a/3;
+    c=a/5%3;
+    printf("a=%d,b=%d,c%d\n",a,b,c);
+    return 0;
+
+}*/
+//a=4
+//b=1
+//c=0
+
+//9.
+#include<stdio.h>
+int main()
+{
+    int a=15,b=13,c=16,x,y;
+    x=a-3%2+c*2/4%2+b/4;
+    y=a=b+5-b+9/3;
+    printf("x=%d,y=%d\n",x,y);
+    return 0;
+}
+
+//x=15-3%2+16*2/4%2+13/4
+//15-3%2+32/4%2+13/4
+//15-3%2+0%2+1
+//12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 3.
+/*#include<stdio.h>
+int main()
+{
+    int a=9,b=15,c=16,d=12,e,f;
+    e=!(a>b || b<c); // !(9<15 || 15<16)
+                       
+    f=(a>b) ? a-b:b-a;
+    printf("e=%d,f=%d\n",e,f);
+    return 0;
+} 
+
+
+
+
+// 2.
+/* #include<stdio.h>
+int main()
+{
+    int  a=2,b=1,c,d;
+    c=a<b;
+    d=(a>b) && (c<b);
+    printf("c=%d,d=%d\n",c,d);
+    return 0;
+}*/
+// c=2<1
+//c=0
+//d=2>1 && 0
+
+
+
+// 1.
+ #include<stdio.h>
+int main()
+{
+    int  a=-5;
+    a=-a-a+!a;
+    printf("%d\n",a);
+    return 0;
+} 
+
