@@ -1,6 +1,7 @@
 #include<stdio.h>
 void main()
-{struct num
+{
+struct num
 {
     int a;
     int b;
